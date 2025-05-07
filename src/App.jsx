@@ -19,6 +19,7 @@ function App() {
 
   const getRandomCountry = async () => {
     try {
+      setLoader(true);
       const response = await quizService.getRandomCountry();
       if (response) {
         setQuizState({
