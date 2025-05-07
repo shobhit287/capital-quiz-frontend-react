@@ -33,8 +33,7 @@ yarn install
 Create a `.env` file in the root directory and add the following:
 
 ```env
-REACT_APP_HOST=http://localhost:8000  # The backend API endpoint
-REACT_APP_PORTAL_URL=http://localhost:3000  # The URL for the frontend
+VITE_BACKEND_URL=http://localhost:8000  # The backend API endpoint
 ```
 
 > ℹ️ Make sure your React project loads environment variables from the `.env` file.
