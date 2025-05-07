@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 6px;
+  background:
+    conic-gradient(from 135deg at top, currentColor 90deg, transparent 0) 0 calc(50% - 4px) / 17px 8.5px,
+    radial-gradient(farthest-side at bottom left, transparent calc(100% - 6px), currentColor calc(100% - 5px) 99%, transparent) top right / 50% 50% content-box,
+    radial-gradient(farthest-side at top, transparent calc(100% - 6px), currentColor calc(100% - 5px) 99%, transparent) bottom / 100% 50% content-box content-box;
+  background-repeat: no-repeat;
+  animation: rotateAnimation 1s infinite linear;
+}
+
+@keyframes rotateAnimation {
+  100% {
+    transform: rotate(1turn);
+  }
+}
