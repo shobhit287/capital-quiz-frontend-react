@@ -65,7 +65,7 @@ const Quiz = () => {
           <div className="card p-4 shadow">
             {loader && <Loader />}
             <form onSubmit={handleSubmit}>
-              <h3 className="mb-3">What is the capital of {quizState.country}?</h3>
+              <h3 className="mb-3">What is the capital of '{quizState.country}' ?</h3>
               <div className="input-group mb-3">
                 <input
                   type="text"
